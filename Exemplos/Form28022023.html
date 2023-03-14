@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Trabalhando com Formulários</title>
+</head>
+<body>
+	<form action="#" method="GET">
+		<fieldset>
+		<legend>Formulário:</legend>
+		<legend>Nome:</legend>
+		<input type="text" name="nome">
+		<legend>Telefone</legend>
+		<input type="tel" name="telefone">
+		</fieldset>
+		<legend>Buscar</legend>
+		<input type="search" name="busca">
+		<br>
+		<input type="range" min="0" max="10" step="1" name="numero">
+		<br>
+		<input type="time" name="hora" step="900"
+		 min="08:00" max="18:00" required>
+		<input type="submit" name="enviar">
+		<input type="reset" name="apagar">
+		<hr>
+		<input name=”q” placeholder="Search here">
+	</form>
+	<form>
+	<label for="CEP">CEP:
+	<input name="CEP" id="CEP" required
+		pattern="\d{5}-?\d{3}">
+	</label>
+	<input type="submit" value="Enviar">
+</form>
+</body>
+</html>
+
